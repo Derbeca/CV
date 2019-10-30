@@ -1,0 +1,428 @@
+/* CSS PETIT ECRAN */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background-image: url("assets/images/hoja.jpg");
+}
+
+/* CSS HEADER */
+header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 30px;
+}
+#moi {
+    width: 100%;
+    margin-bottom: 15px;
+}
+/* CSS MENU */
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#menu li {
+    font-size: 10px;
+    margin: 5px;
+}
+#submenu {
+    display: none;
+    position:absolute;
+    width: 100px;
+    min-width:140px;
+    background-color: #B3B3B3;
+}
+#menu li a {
+    color: #B3B3B3;
+}
+#menu li a:hover {
+    color: black;
+}
+#menu li:hover > #submenu {
+    display:block;
+}
+#submenu li {
+    position: relative;
+}
+#submenu li a {
+    color: white;
+}
+#submenu li a:hover {
+    color: black;
+}
+#submenu ul {
+    right:-140px;
+    top:0px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+/* CSS PREMIER PAGE */
+#couverture {
+    width: 100%;
+}
+#couverture img {
+    width: 50%;
+    margin: 100px auto 0;
+    display: block;
+}
+#dibujo {
+    width: 100%;
+    display: block;
+}
+#dibujo img {
+    width: 100%;
+}
+#dibujoGrand {
+    display: none;
+}
+#dibujoGrand img {
+    width: 100vw;
+}
+#logo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#logo a {
+    margin: auto;
+    display: block;
+}
+#logo img {
+    width: 100px;
+}
+#logo #linkedin {
+    width: 30px;
+    margin-right: 10px;
+}
+nav {
+    width: 100%;
+}
+#logo2 {
+    display: flex;
+    justify-content: space-between;
+}
+#logo2 a {
+    margin: 20px;
+    color: #B3B3B3;
+    font-size: 12px;
+    text-align: center;
+}
+#logo2 img {
+    height: 30px;
+    margin: auto;
+    display: block;
+}
+/* CSS PAGE ABOUT ME */
+#aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto 10px;
+}
+#mitad2 {
+    width: 60%;
+    margin: auto;
+}
+#mitad1 {
+    display: none;
+}
+#aboutMe p {
+    width: 65%;
+    margin: 10px auto;
+    color: #B3B3B3;
+    font-size: 10px;
+}
+#logosDev {
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+.texte h3 {
+    margin: 20px;
+}
+.texte p {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 30px;
+    color: #4D4D4D;
+}
+
+/* PAGE GALERIE ILLUSTRATIONS */
+#illustrations {
+    background-color: white;
+}
+#illustrations h3 {
+    color: #B3B3B3;
+}
+/* PAGE GALERIE GRAPHISME */
+#graphisme {
+    background-color: white;
+}
+#graphisme h3 {
+    color: #B3B3B3;
+}
+/* PAGE GALERIE WEB */
+#web {
+    background-color: white;
+}
+#web h3 {
+    color: #B3B3B3;
+}
+
+/* PAGE GALERIE TRAVAIL COLLABORATIF */
+#collaboratif {
+    background-color: white;
+}
+#collaboratif h3 {
+    color: #B3B3B3;
+}
+
+/* CSS LIGHTBOX */
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.galerie img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    margin: 5px;
+}
+.galerieGrand {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+    transition: all 1s;
+    opacity: 0;
+    display: block;
+}
+.galerieGrand.montrer2 {
+    top: -2000;
+    left: 0;
+    z-index: 99;
+    opacity: 1;
+    display: block;
+}
+.galerieGrand img {
+    max-width: 260px;
+    max-height: 500px;
+    margin: 70px auto;
+    display: block;
+}
+
+/* PAGE CONTACT */
+#contact {
+    background-color: white;
+    margin-bottom: 20px;
+}
+#contact h3 {
+    color: #B3B3B3;
+}
+form {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+}
+form label span {
+    display: block;
+    margin: 10px;
+    color: rgb(230, 225, 225);
+    font-size: 12px;
+}
+#contact input {
+    background-color:rgb(230, 225, 225);
+    width: 100%;
+    height: 30px;
+    border: none;
+    padding-left: 5px;
+    font-size: 12px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+textarea {
+    background-color:rgb(230, 225, 225);
+    width: 100%;
+    height: 60px;
+    border: none;
+    padding-left: 5px;
+    font-size: 12px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+button {
+    width: 100px;
+    height: 30px;
+    background-color: #4D4D4D;
+    color: white;
+    border: none;
+    display: block;
+    margin: 10px auto;
+}
+
+/* CSS FOOTER */
+footer {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    background-color: #64cec1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer p {
+    display: block;
+    width: 38%;
+    color: white;
+    padding-left: 10px;
+    font-size: 10px;
+}
+footer a {
+    width: 31%;
+    color: #4D4D4D;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10px;
+}
+footer a img {
+    margin: auto;
+    width: 80px;
+}
+
+/* CSS MEDIUM ECRAN */
+@media (min-width: 425px) {
+    .galerie img {
+        width: 180px;
+        height: 180px;
+    }
+ }
+
+/* CSS GRAND ECRAN */
+@media (min-width: 768px) { 
+    #couverture img {
+        width: 20%;
+    }
+    #dibujo {
+        width: 40%;
+        display: none;
+    }
+    #dibujoGrand {
+        display: block;
+    }
+    #dibujoGrand img {
+        height: 100%;
+    }
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    section {
+        width: 100%;
+    }
+    #aboutMe {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 50px auto 10px;
+        width: 70%;
+    }
+    #mitad2 {
+        display: none;
+    }
+    #mitad1 {
+        display: block;
+        width: 150px;
+        height: 250px;
+    }
+    #aboutMe p {
+        width: 300px;
+        margin: 20px 20px;
+        font-size: 12px;
+    }
+    .texte h3 {
+        margin: 30px 50px;
+        font-size: 24px;
+    }
+    ul {
+        width: 100%;
+    }
+    .galerie img {
+        width: 120px;
+        height: 120px;
+    }
+    .galerieGrand img {
+        max-width: 600px;
+        max-height: 500px;
+        margin: 70px auto;
+        display: block;
+    }
+    #logo {
+        margin-bottom: 20px;
+        width: 30%;
+        margin: auto;
+    }
+    #logo a {
+        margin: auto;
+    }
+    #logo img {
+        width: 150px;
+    }
+    form {
+        width: 50%;
+    }
+    footer p {
+        font-size: 12px;
+        width: 80%;
+    }
+    footer a {
+        width: 10%;
+    }
+ }
+
+
+@media (min-width: 992px) {
+    .galerie img {
+        width: 150px;
+        height: 150px;
+    }
+    .texte {
+        width: 70%;
+    }
+    .texte h3 {
+        margin: 30px 0;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    form {
+        width: 50%;
+    }
+    .texte {
+        width: 80%;
+    }
+}

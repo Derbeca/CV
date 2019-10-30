@@ -1,0 +1,59 @@
+/* CSS PETIT ECRAN */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+#couverture {
+    width: 100%;
+}
+#couverture img {
+    width: 20%;
+    margin: 100px auto 0;
+    display: block;
+}
+#dibujo {
+    width: 40%;
+    display: block;
+}
+#dibujoGrand {
+    display: none;
+}
+#dibujoGrand img {
+    width: 100vw;
+}
+#logo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#logo a {
+    margin: auto;
+    display: block;
+}
+#logo img {
+    width: 150px;
+}
+
+@media (min-width: 768px) { 
+    #couverture img {
+        width: 20%;
+    }
+    #dibujo {
+        width: 40%;
+        display: none;
+    }
+    #dibujoGrand {
+        display: block;
+    }
+    #dibujoGrand img {
+        width: 100vw;
+    }
+}
