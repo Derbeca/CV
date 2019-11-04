@@ -98,7 +98,7 @@
         <section id="web" class="texte" v-show="menuActif == 'menu6'">
             <h3>Projets web</h3>
             <div class="galerie">
-                <a href="https://github.com/Derbeca/agenda-scolaire"><img src="assets/images/web1.jpg" alt="web1" title="project agenda scolaire"></a>
+                <a href="https://github.com/Derbeca/agenda-scolaire"><img src="assets/images/web1.jpg" alt="web1" title="projet agenda scolaire"></a>
 
                 <a href="https://github.com/baghdad23/laravel/tree/master/mpequipe"><img src="assets/images/web3.jpg" alt="web3" title="projet en groupe avec laravel"></a>
 
