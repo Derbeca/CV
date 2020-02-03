@@ -30,6 +30,7 @@
             <div id="logo2">
                 <a @click="menuActif = 'menu1'" href="#"><img src="assets/images/logo_derbeca.png"></a>
                 <a href="https://www.linkedin.com/in/rebeca-gruber-p%C3%A9rez-48a65583/"><img src="assets/images/logo_linkedin.png" alt="linkedin" id="linkedin"></a>
+                <a href="https://github.com/Derbeca"><img src="assets/images/logo_gitHub.svg" alt="github" id="github"></a>
             </div>
             <ul id="menu">
                 <li><a @click="menuActif = 'menu3'" href="#">• ABOUT ME •</a></li>
@@ -98,8 +99,8 @@
         <section id="web" class="texte" v-show="menuActif == 'menu6'">
             <h3>Projets web</h3>
             <div class="galerie">
-                <a href="https://github.com/Derbeca/agenda-scolaire"><img src="assets/images/web1.jpg" alt="web1" title="projet agenda scolaire"></a>
-
+                <a href="https://agenda.derbeca.com"><img src="assets/images/web1.jpg" alt="web1" title="projet agenda scolaire"></a>
+                <a href="https://garage.derbeca.com"><img src="assets/images/web4.jpg" alt="web1" title="projet agenda scolaire"></a>
                 <a href="https://github.com/baghdad23/laravel/tree/master/mpequipe"><img src="assets/images/web3.jpg" alt="web3" title="projet en groupe avec laravel"></a>
 
             </div>
